@@ -32,7 +32,7 @@
             <nav class="flex justify-around ">
                 <div>
                     <div>
-                        <button class="btn btn-ghost text-base lg:text-xl font-bold bg-[#B4F461]">Blog</button>
+                        <button id="btn-blog" class="btn btn-ghost text-base lg:text-xl font-bold bg-[#B4F461]">Blog</button>
                     </div>
                 </div>
                 <div class="  flex justify-center items-center space-x-3">
@@ -46,7 +46,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <div class="flex lg:space-x-2">
                         <div class="flex justify-center items-center">
-                            <img class="w-[40px]" src="assets/coin.png" alt="">
+                            <img class="w-[40px] md:w-max lg:w-max" src="assets/coin.png" alt="">
                         </div>
                         <div class="text-base lg:text-xl  font-bold ">50000</div>
                         <h2 class="text-base lg:text-xl font-bold"> BDT</h2>
@@ -73,18 +73,18 @@
     <!-- main section -->
     <main class="w-11/12 mx-auto ">
         <section class="space-y-9 lg:w-[75%] mx-auto">
-            <div class="lg:flex  border border-gray-300 rounded-xl mx-auto space-y-6 lg:space-y-0 lg:space-x-14 lg:p-6">
-                <div class="lg:w-[40%] lg:flex justify-center">
+            <div class="md:flex lg:flex  border border-gray-300 rounded-xl mx-auto space-y-6 md:space-y-0 md:space-x-14 lg:space-y-0 lg:space-x-14 lg:p-6">
+                <div class="md:w-[40%] md:flex lg:w-[40%] lg:flex justify-center">
                     <img class="w-[100%] h-full" src="assets/noakhali.png" alt="">
                 </div>
-                <div class="lg:w-[45%] flex flex-col space-y-6 lg:space-y-8">
+                <div class="md:w-[45%] md:space-y-4 lg:w-[45%]   flex flex-col space-y-6  lg:space-y-8">
                     <div class="flex space-x-2 bg-gray-200 w-max p-2 rounded-xl">
                         <img class="" src="assets/coin.png" alt="">
                         <div class="text-base lg:text-xl font-bold ">1000 </div>
                         <h2 class="text-base lg:text-xl font-bold">BDT</h2>
                     </div>
                     <h2 class="text-xl lg:text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="text-base lg:text-lg"> The recent floods in Noakhali have caused significant damage to homes
+                    <p class="text-base md:text-lg lg:text-lg"> The recent floods in Noakhali have caused significant damage to homes
                         infrastructure. Your donation will help provide essential supplies and to those affected by this
                         disaster. Every contribution, big or small, makes difference. Please join us in supporting the
                         relief efforts and making a positive impact on the lives of those in need.</p>
@@ -132,8 +132,11 @@
 
     </main>
     <footer class=" mx-auto lg:pt-5 lg:py-20 md:pt-5 md:py-10 bg-gray-100 mt-7"></footer>
+
+
     <script src="js/utilities.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 
 </html>
