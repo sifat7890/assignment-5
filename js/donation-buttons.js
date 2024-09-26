@@ -7,7 +7,7 @@ document.getElementById('donate-btn-noakhali').addEventListener('click', functio
     const availableMoney = getTextFieldValueById('available-amount');
 
 
-   if (isNaN(noakhaliMoneyInput) || noakhaliMoneyInput < 0 || /[a-zA-Z]/.test(noakhaliMoneyInput)) {
+   if (isNaN(noakhaliMoneyInput) ||  noakhaliMoneyInput < 0 || /[a-zA-Z]/.test(noakhaliMoneyInput) || noakhaliMoneyInput === "") {
 
         alert('Please enter a valid number');
         return;
@@ -39,12 +39,23 @@ document.getElementById('donate-btn-noakhali').addEventListener('click', functio
         `
         document.getElementById('history').appendChild(div);
 
+        document.getElementById('my_modal_5').showModal();
+
+
     }
     else {
         alert('You dont have enough money');
     }
 
 })
+
+const modal = document.getElementById('my_modal_5');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+closeModalBtn.addEventListener('click', () => {
+  modal.close(); // Close the modal without reloading
+});
+
 
 // feni donation 
 document.getElementById('donate-btn-feni').addEventListener('click', function (event) {
@@ -54,7 +65,7 @@ document.getElementById('donate-btn-feni').addEventListener('click', function (e
     const availableMoney = getTextFieldValueById('available-amount');
 
 
-   if (isNaN(feniMoneyInput) || feniMoneyInput < 0 || /[a-zA-Z]/.test(feniMoneyInput)) {
+   if (isNaN(feniMoneyInput) ||  feniMoneyInput < 0 || /[a-zA-Z]/.test(feniMoneyInput) || feniMoneyInput === "") {
 
         alert('Please enter a valid number');
         return;
@@ -85,11 +96,13 @@ document.getElementById('donate-btn-feni').addEventListener('click', function (e
         <div/>
         `
         document.getElementById('history').appendChild(div);
+        document.getElementById('my_modal_5').showModal();
 
     }
     else {
         alert('You dont have enough money');
     }
+    
 
 })
 
@@ -102,7 +115,7 @@ document.getElementById('donate-btn-quota').addEventListener('click', function (
     const availableMoney = getTextFieldValueById('available-amount');
 
 
-   if (isNaN(quotaMoneyInput) || quotaMoneyInput < 0 || /[a-zA-Z]/.test(quotaMoneyInput)) {
+   if (isNaN(quotaMoneyInput) ||  quotaMoneyInput < 0 || /[a-zA-Z]/.test(quotaMoneyInput) || quotaMoneyInput === ""){
 
         alert('Please enter a valid number');
         return;
@@ -133,6 +146,7 @@ document.getElementById('donate-btn-quota').addEventListener('click', function (
         <div/>
         `
         document.getElementById('history').appendChild(div);
+        document.getElementById('my_modal_5').showModal();
 
     }
     else {

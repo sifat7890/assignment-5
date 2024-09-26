@@ -47,7 +47,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <div class="flex lg:space-x-2">
                         <div class="flex justify-center items-center">
-                            <img class="w-[40px] md:w-max lg:w-max" src="assets/coin.png" alt="">
+                            <img class="w-[30px] sm:w-[40px] md:w-max lg:w-max" src="assets/coin.png" alt="">
                         </div>
                         <div id="available-amount" class="text-base lg:text-xl  font-bold ">50000</div>
                         <h2 class="text-base lg:text-xl font-bold"> BDT</h2>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="md:w-[50%]  md:space-y-4 lg:w-[50%]   flex flex-col space-y-6  lg:space-y-8">
                     <div class="flex space-x-2 bg-gray-200 w-max p-2 rounded-xl">
-                        <img  src="assets/coin.png" alt="">
+                        <img src="assets/coin.png" alt="">
                         <div id="noakhali-balance" class="text-base lg:text-xl font-bold ">1000 </div>
                         <h2 class="text-base lg:text-xl font-bold">BDT</h2>
                     </div>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="md:w-[50%]  md:space-y-4 lg:w-[50%]   flex flex-col space-y-6  lg:space-y-8">
                     <div class="flex space-x-2 bg-gray-200 w-max p-2 rounded-xl">
-                        <img  src="assets/coin.png" alt="">
+                        <img src="assets/coin.png" alt="">
                         <div id="feni-balance" class="text-base lg:text-xl font-bold ">1000 BDT</div>
                     </div>
                     <h2 class="text-xl lg:text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -128,7 +128,7 @@
                 </div>
                 <div class="md:w-[50%]  md:space-y-4 lg:w-[50%]   flex flex-col space-y-6  lg:space-y-8">
                     <div class="flex space-x-2 bg-gray-200 w-max p-2 rounded-xl">
-                        <img  src="assets/coin.png" alt="">
+                        <img src="assets/coin.png" alt="">
                         <div id="quota-balance" class="text-base lg:text-xl font-bold ">1000 BDT</div>
                     </div>
                     <h2 class="text-xl lg:text-2xl font-bold">Aid for Injured in the Quota Movement</h2>
@@ -152,6 +152,22 @@
 
         </section>
 
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h1 class="font-extrabold md:text-3xl text-2xl text-center">Congrats!</h1>
+                <br>
+                <div class="w-full">
+                    <img class="text-center mx-auto" src="./assets/coin.png" alt="coin">
+                </div>
+                <p class="text-center">You Have Donated For HumanKind</p>
+                <h1 class="font-bold md:text-2xl text-xl text-center">Successfully</h1>
+                <br>
+                <!-- Close Button -->
+                <div class="modal-action flex justify-center">
+                    <button class="btn px-4" id="closeModalBtn">Close Confirmation</button>
+                </div>
+            </div>
+        </dialog>
 
     </main>
     <footer id="footer-section" class=" mx-auto lg:pt-5 lg:h-24 md:pt-5 md:h-24  bg-gray-100 mt-7  mb-0"></footer>
