@@ -4,15 +4,20 @@ function getShowButtonById(id) {
 
     document.getElementById(id).classList.add('bg-[#B4F461]');
 
+   
+
+}
+function getSectionById(id){
+    // hide all section
+    document.getElementById('donation').classList.add('hidden');
+    document.getElementById('history').classList.add('hidden');
+   
+    // show the selected id
+     document.getElementById(id).classList.remove('hidden');
+
 }
 
-function getInputFieldValueById(id) {
-    const inputValue = document.getElementById(id).value;
-    const inputNumber = parseFloat(inputValue);
-  
-    
-    return inputNumber;
-}
+
 
 function getTextFieldValueById(id) {
     const textValue = document.getElementById(id).innerText;
